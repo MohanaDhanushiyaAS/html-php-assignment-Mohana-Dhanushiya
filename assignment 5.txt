@@ -1,0 +1,25 @@
+<?php
+// Prices and quantities of three items
+$price1 = 120;
+$qty1   = 2;
+
+$price2 = 50;
+$qty2   = 3;
+
+$price3 = 30;
+$qty3   = 5;
+
+// Calculate subtotal
+$subtotal = ($price1 * $qty1) + ($price2 * $qty2) + ($price3 * $qty3);
+
+// Calculate tax (10%)
+$tax = $subtotal * 0.10;
+
+// Calculate total cost
+$total = $subtotal + $tax;
+
+// Display results
+echo "Subtotal: $" . number_format($subtotal, 2) . "\n";
+echo "Tax (10%): $" . number_format($tax, 2) . "\n";
+echo "Total Cost: $" . number_format($total, 2) . "\n";
+?>
