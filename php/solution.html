@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Fashion Flow</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #6B8E23;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .flow-container {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            max-width: 600px;
+            width: 100%;
+            border: 2px solid #0284c7;
+        }
+        
+        .title {
+            text-align: center;
+            color: #1f2937;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #10b981;
+            padding-bottom: 10px;
+        }
+        
+        .flow {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .step {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #fef7cd 0%, #fef3c7 100%);
+            border: 2px solid #f59e0b;
+            border-radius: 10px;
+            padding: 12px 18px;
+            width: 100%;
+            max-width: 300px;
+            transition: all 0.3s ease;
+        }
+        
+        .step:hover {
+            border-color: #d97706;
+            background: linear-gradient(135deg, #fefce8 0%, #fef7cd 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+        }
+        
+        .step-icon {
+            font-size: 1.8rem;
+            margin-right: 12px;
+            width: 40px;
+            text-align: center;
+        }
+        
+        .step-text {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #374151;
+            flex: 1;
+        }
+        
+        .arrow {
+            color: #6b7280;
+            font-size: 1.5rem;
+            margin: -5px 0;
+        }
+        
+        .multi-step {
+            background: linear-gradient(135deg, #dcfce7 0%, #bbf7d0 100%);
+            border: 2px solid #16a34a;
+            padding: 15px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+        
+        .multi-step:hover {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-color: #15803d;
+            box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+        }
+        
+        .multi-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #15803d;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .option {
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #fef7cd 0%, #fefce8 100%);
+            padding: 8px 12px;
+            border-radius: 6px;
+            border: 1px solid #eab308;
+        }
+        
+        .option-icon {
+            font-size: 1.2rem;
+            margin-right: 10px;
+            width: 24px;
+            text-align: center;
+        }
+        
+        .option-text {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #a16207;
+        }
+        
+        @media (max-width: 480px) {
+            .flow-container {
+                padding: 20px;
+            }
+            .title {
+                font-size: 1.3rem;
+            }
+            .step {
+                padding: 10px 15px;
+            }
+            .step-text {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flow-container">
+        <h1 class="title">Sustainable Fashion Flow</h1>
+        
+        <div class="flow">
+            <div class="step">
+                <div class="step-icon">🎁</div>
+                <div class="step-text">Initial Free Credits</div>
+            </div>
+            
+            <div class="arrow">↓</div>
+            
+            <div class="step">
+                <div class="step-icon">♻️</div>
+                <div class="step-text">Cloth for Recycle</div>
+            </div>
+            
+            <div class="arrow">↓</div>
+            
+            <div class="step multi-step">
+                <div class="multi-title">Choose Your Action</div>
+                <div class="options">
+                    <div class="option">
+                        <div class="option-icon">👗</div>
+                        <div class="option-text">Rent</div>
+                    </div>
+                    <div class="option">
+                        <div class="option-icon">🤝</div>
+                        <div class="option-text">Peer to Peer Swapping</div>
+                    </div>
+                    <div class="option">
+                        <div class="option-icon">🌱</div>
+                        <div class="option-text">Buy Sustainable Products</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="arrow">↓</div>
+            
+            <div class="step">
+                <div class="step-icon">🌍</div>
+                <div class="step-text">Sustainability Events</div>
+            </div>
+            
+            <div class="arrow">↓</div>
+            
+            <div class="step">
+                <div class="step-icon">🏆</div>
+                <div class="step-text">Rewards & Community Growth</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
